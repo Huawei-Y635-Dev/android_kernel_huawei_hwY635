@@ -70,12 +70,12 @@ module_param(migration_load_threshold, uint, 0644);
 static bool load_based_syncs = 1;
 module_param(load_based_syncs, bool, 0644);
 
-static bool sched_boost_on_input = 1;
+static bool sched_boost_on_input;
 module_param(sched_boost_on_input, bool, 0644);
 
 static bool sched_boost_active;
 
-static bool hotplug_boost = 1;
+static bool hotplug_boost;
 module_param(hotplug_boost, bool, 0644);
 
 #ifdef CONFIG_STATE_NOTIFIER
